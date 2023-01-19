@@ -97,7 +97,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -125,7 +125,7 @@
 
 .thirteen::before,
 .thirteen::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
 }
@@ -268,4 +268,37 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.ocrContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 500px;
+
+  @media (min-width: 767px) {
+    flex-direction: row;
+  }
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.imageContainer img {
+  border-radius: 16px;
+  max-height: 200px;
+}
+
+.ocrResult {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 16px;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
